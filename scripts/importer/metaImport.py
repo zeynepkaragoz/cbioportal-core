@@ -121,6 +121,7 @@ if __name__ == '__main__':
     data_dir = args.data_directory if args.data_directory is not None else args.study_directory
 
     # Validate the study directory.
+    print(data_dir)
     print("Starting validation...\n", file=sys.stderr)
     try:
         exitcode = validateData.main_validate(args)

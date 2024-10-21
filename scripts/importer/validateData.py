@@ -5588,7 +5588,7 @@ def main_validate(args):
         raise RuntimeError("Neither study_directory nor data_directory argument is specified.")
 
     server_url = args.url_server
-
+    print("this is server_url:", server_url)
     html_output_filename = args.html_table
     relaxed_mode = args.relaxed_clinical_definitions
     strict_maf_checks = args.strict_maf_checks
@@ -5661,7 +5661,7 @@ def main_validate(args):
                                            offline=True)
     else:
         portal_instance = load_portal_info(server_url, logger)
-
+    print("this is portal_instance:", portal_instance)
     # set portal version
     cbio_version = portal_instance.portal_version
 

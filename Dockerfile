@@ -39,7 +39,7 @@ RUN chmod -R a+x /scripts/
 # Set the working directory in the container
 WORKDIR /scripts/
 
-ENV PORTAL_HOME=/
+ENV PORTAL_HOME=/usr/local/airflow/cbioportal-core
 
 # This file is empty. It has to be overriden by bind mounting the actual application.properties
 RUN touch /application.properties
